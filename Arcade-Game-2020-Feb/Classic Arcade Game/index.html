@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--title of the document-->
+    <title>Animals Arcade Game</title>
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="bootstrap-version-4.2.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!--header-->
+    <div class="container navigation-menu size">
+        <header class="mt-2 ">
+           <h1 class="heading1 text-center">ARCADE GAME </h1> 
+
+              <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <section class="score-panel">
+                    <button onclick="reLoad()" class="heading4 btn">
+                        <span class="badge badge-light">
+                          <i class="fas fa-redo reload"></i>
+                        </span>
+                    </button>
+
+                    <div class="float-left heart"> <!-- life -->
+                        <span class="heading4 ">Your Life:</span>
+                        <i class="fa fa-heart life"></i>
+                        <i class="fa fa-heart life"></i>
+                        <i class="fa fa-heart life"></i>
+                    </div>
+                </section>
+        </header>
+        <!--header ends-->
+
+        <section class="mt-2">
+            <div id="modal" class="popup">
+                <div class="popup-content">
+                    <article class="container mb-4">
+                        <h2 class="heading2 text-center alertmsg"></h2>
+                        <hr class="ruler">
+                        <!--player score-->
+                        <h3 class="heading3 text-center">Achievements</h3>
+                        <div class="row navigation-menu">
+                            <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2">
+                                <h4 class="heading4 text-center">Score :</h4>
+                            </div>
+                            <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2">
+                                <p class="highscore text-center"></p>
+                            </div>
+                            <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2">
+                                <h4 class="heading4 text-center">Gem Awarded :</h4>
+                            </div> 
+                            <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2">
+                                <span class="coines"></span>
+                            </div>
+                        </div>
+                    </article>
+                            <!--button to reload the game with using bootstrap-->
+                            <button onclick="reLoad()" class="btn btn-danger btn-lg btn-block">Play Again
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div id="modals" class="popup">
+                        <div class="popup-content">
+                            <article class="container mb-4">
+                                <h2 class="heading2 text-center">Select your character</h2>
+                                <div class="row navigation-menu">
+                                    <div class="col">
+                                        <img src="monkey.png" alt="monkey" class="imgselect">
+                                        <h4 class="heading4">Alix</h4>
+                                    </div>
+                                    <div class="col">
+                                        <img src="tortoise.png" alt="tortoise" class="imgselect">
+                                        <h4 class="heading4">Tome</h4>
+                                    </div>
+                                    <div class="col">
+                                        <img src="duck.png" alt="duck" class="imgselect">
+                                        <h4 class="heading4">Dany</h4>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                </section>
+            
+            </div>
+
+    <!--script file-->
+    <script src="resources.js"></script>
+    <script src="app.js"></script>
+    <script src="engine.js"></script>
+    <script src="sound.js"></script>
+
+
+</body>
+
+</html>
